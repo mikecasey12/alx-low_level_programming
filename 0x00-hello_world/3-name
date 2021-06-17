@@ -1,2 +1,2 @@
 #!/bin/bashh
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o cisfun main.c
+gcc -o cisfun main.c
