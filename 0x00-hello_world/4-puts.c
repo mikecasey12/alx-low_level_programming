@@ -1,11 +1,9 @@
 #include<stdio.h>
 
 /**
- * function_name - print a message
- * Description: The function displays a message to the users
- * Return: void
+ * main - print a message
+ * Return: returns message
  */
-
 int main(void)
 {
 	char MyStr[] = "\"Programming is like building a multilingual puzzle";
