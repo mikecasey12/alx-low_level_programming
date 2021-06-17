@@ -1,2 +1,2 @@
 #!/bin/bash
-icc -S 100-main.s 100-main.c
+gcc -S -masm=intel 100-main.c
