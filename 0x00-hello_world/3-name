@@ -1,2 +1,2 @@
 #!/bin/bashh
-gcc 3-main.c -o cisfun
+gcc -o cisfun 3-main.c
