@@ -1,6 +1,7 @@
 #include<stdio.h>
 /**
- * main: display size of different types on systems
+ * main: display size of, different types on systems
+ * Description: The function displays the size of the different types on different systems)?
  */
 int main(void)
 {
