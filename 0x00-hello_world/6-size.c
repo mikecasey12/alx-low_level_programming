@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
  * main: display size of
- * Description: The function displays the size of the different types on different systems)?
+ * Description: The function displays the size of different types)?
  */
 int main(void)
 {
