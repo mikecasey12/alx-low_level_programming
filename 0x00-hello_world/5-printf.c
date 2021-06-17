@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
-* main - Prints message using printf
+ * main - Prints message using printf
 */
 int main(void)
 {
