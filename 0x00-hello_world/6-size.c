@@ -1,4 +1,4 @@
-#!/bin/bash
+#include<stdio.h>
 /**
  * main: display size of different types on systems
  */
@@ -9,6 +9,7 @@ int main(void)
 	long long int lli;
 	double d;
 	char c;
+	float f;
 
 	printf("Size of a char: %lu.\n", (unsigned long)sizeof(c));
 	printf("Size of an int: %lu.\n", (unsigned long)sizeof(i));
