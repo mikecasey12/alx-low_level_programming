@@ -1,2 +1,2 @@
 #!/bin/bashh
-make cisfun
+gcc 3-main.c -o cisfun
