@@ -1,2 +1,2 @@
 #!/bin/bash
-icpc -S 100-main.c
+icc -S 100-main.s 100-main.c
