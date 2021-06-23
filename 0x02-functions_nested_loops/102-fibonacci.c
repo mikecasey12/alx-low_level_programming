@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int i, n = 50, t1 = 1, t2 = 1;
+	int i, n = 50, t1 = 1, t2 = 2;
 	int next = t1 + t2;
 
 	printf("%d, \n%d, \n", t1, t2);
