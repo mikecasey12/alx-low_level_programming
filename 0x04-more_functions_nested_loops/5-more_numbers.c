@@ -6,7 +6,7 @@
  * Return: returns 0 on success.
  */
 
-void more_numbers(void);
+void more_numbers(void)
 {
 	int n, m;
 
@@ -18,5 +18,4 @@ void more_numbers(void);
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
