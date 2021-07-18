@@ -31,7 +31,7 @@ char *_strcpy(char *dst, char *src)
 
 	while (*src != '\0')
 	{
-		*src++ = *src++;
+		*str++ = *src++;
 	}
 	str = '\0';
 	return (str);
