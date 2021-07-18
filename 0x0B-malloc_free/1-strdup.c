@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
+
+char *_strcpy(char *dst, char *src);
+
 /**
  * _strdup - duplicate to new memory space location
  * @str: char
@@ -8,23 +11,28 @@
  */
 char *_strdup(char *str)
 {
-	int i, end;
-	char *array;
+	char *dst = malloc(sizeof(char));
 
 	if (str == NULL)
 		return (NULL);
+	_strcpy(dst, str);
+	return (dst);
+}
+/**
+ * *_strcpy - function that copies string from source to destination
+ * @dst: pointer destination string
+ * @src: pointer to source string
+ * Return: returns string
+ */
 
-	for (end = 0; end <= *str; end++)
+char *_strcpy(char *dst, char *src)
+{
+	char *str = dst;
+
+	while (*src != '\0')
 	{
+		*src++ = *src++;
 	}
-
-	end += 1;
-	array = malloc(sizeof(char) * end);
-
-	for (i = 0; i < end; i++)
-		array[i] = str[i];
-
-	if (array == NULL)
-		return (NULL);
-	return (array);
+	str = '\0';
+	return (str);
 }
