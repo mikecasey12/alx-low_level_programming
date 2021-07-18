@@ -26,7 +26,12 @@ char *_strdup(char *str)
 	dst = malloc(sizeof(char));
 
 	_strcpy(dst, str);
-	return (dst);
+
+	if (dst != NULL)
+		return (dst);
+	else
+		return (NULL);
+
 }
 /**
  * *_strcpy - function that copies string from source to destination
