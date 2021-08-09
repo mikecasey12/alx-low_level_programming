@@ -1,33 +1,28 @@
 #include "main.h"
+
 /**
- * print_binary - Entry Point
- * @n: dec input
- * Return: 0
+ * _right_pbin_mask - recursion function to print bit 0 (acts as a mask)
+ * @n: type const unsigned long int
  */
+
+void _right_pbin_mask(unsigned long int n)
+{
+	if (n == 0)
+		return;
+	_right_pbin_mask(n >> 1);
+	_putchar((n & 1) + '0');
+}
+
+/**
+ * print_binary - prints the binary representation of a number
+ * @n: type const unsigned long int
+ * Return: binary number
+ */
+
 void print_binary(unsigned long int n)
 {
-	unsigned long int range = 2147483648;
-
 	if (n == 0)
-	{
-		printf("0");
-	}
-xy:
-	if (range > 0)
-	{
-		if ((n & range) == 0)
-		{
-			range = range >> 1;
-			goto xy;
-		}
-		else
-			while (range > 0)
-			{
-				if ((n & range) == 0)
-					printf("0");
-				else
-					printf("1");
-				range = range >> 1;
-			}
-	}
+		_putchar('0');
+	else
+		_right_pbin_mask(n);
 }
